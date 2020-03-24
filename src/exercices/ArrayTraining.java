@@ -92,8 +92,15 @@ public class ArrayTraining {
      * @return sum of values of the array, eg: 6
      */
     public int sum(int[] array) {
-        return 0;
+        int sum = 0;
+        int length = array.length;
+        for (int i = 0; i < length; i++) {
+            sum += array[i];
+        }
+        return sum;
+
     }
+
 
     /**
      * @param array,  eg: {1, 2, 3}
@@ -136,7 +143,16 @@ public class ArrayTraining {
      * are equals, eg: false
      */
     public boolean equals(int[] first, int[] second) {
-        return false;
+
+        boolean test = true;
+        int length = first.length;
+        for (int i = 0; i < length; i++) {          
+            if (first[i] == second[i]) {                
+            } else {
+                test = false;            
+            }
+        }
+        return test;
     }
 
     /**
@@ -145,7 +161,12 @@ public class ArrayTraining {
      */
     public int[] reverse(int[] array) {
 
-        return null;
+        int length = array.length;
+        int[] reversedArray = new int[length];
+        for (int index = 0; index < length; index++) {
+            reversedArray[index] = array[length - index - 1];
+        }
+        return reversedArray;
     }
 
     /**
@@ -155,7 +176,16 @@ public class ArrayTraining {
      * eg: {1, 2, 3, 4, 5}
      */
     public int[] concat(int[] first, int[] second) {
-
-        return null;
+        int length1 = first.length;
+        int length2 = second.length;
+        int length3 = length1 + length2; 
+        int [] newArray = new int[length3];
+        for (int i = 0; i < length1; i++) {
+            newArray[i]= first[i];
+        }
+        for (int i = length1 + 1; i < length3; i++) {
+            newArray[i]= second[i];
+        }
+        return newArray;
     }
 }
