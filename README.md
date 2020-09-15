@@ -7,7 +7,7 @@ Java Training est une série de quêtes qui vont te permettre de t’entraîner 
 * Tester son code
 * Savoir lire des logs d'erreur
 
-## Etapes
+## Étapes
 
 ### Initialisation de ton dépôt
 
@@ -92,7 +92,7 @@ Suivons les indications :
 Tu vas voir apparaître un tas d'erreurs, c'est normal : ton but est de réparer tout ça !
 
 
-### Editer les sources de l'exercice
+### Éditer les sources de l'exercice
 
 Chaque exercice va être contenu dans un fichier source, présent dans le dossier `src/exercices/`.
 
